@@ -1,0 +1,50 @@
+/* @group equal-height-col 
+ * Reference:CSS Mastery Advanced Web Standards Solutions Second Edition;
+ */
+/* 
+ * 等高文本列
+ */
+.equal-height-col-group {
+  position: relative;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.equal-height-col-box {
+  text-align: left;
+  width: 25%;
+  margin-left: 3%;
+  display: inline-block;
+  padding: 20px;
+  vertical-align: top;
+  padding-bottom: 300px;
+  margin-bottom: -300px;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background-color: #E7E7E7;
+}
+.equal-height-col-box:first-child {
+  margin-left: 0;
+}
+.equal-height-col-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 290px;
+  border-bottom: 1px solid #ddd;
+  margin-left: -20px;
+}
+/* 
+ * 使用CSS3创建等高文本列
+ */
+.equal-height-col-css3 {
+  text-align: left;
+  -moz-column-count: 3;
+  -moz-column-width: 14em;
+  -moz-column-gap: 2em;
+  -moz-column-rule: 1px solid #ccc;
+  -webkit-column-count: 3;
+  -webkit-column-width: 14em;
+  -webkit-column-gap: 2em;
+  -webkit-column-rule: 1px solid #ccc;
+}

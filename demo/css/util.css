@@ -1,0 +1,43 @@
+/*
+ * @group style
+ */
+h1 {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 1em 0;
+}
+.dotted-line {
+  border-bottom: 1px dotted #CCC;
+  margin: 20px auto;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+/* 
+  *@group float
+  */
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+/* @group word-bread */
+.text-overflow {
+  width: 10em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}

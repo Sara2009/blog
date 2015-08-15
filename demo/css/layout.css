@@ -1,0 +1,28 @@
+/*
+ * @group reset
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 100%/1.6 "Microsoft Yahei", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+  background-color: #F8F8F8;
+}
+/*
+ * @group layout
+ */
+.wrapper {
+  background: #FFF ;
+  width: 76.8%;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 125em;
+}
+.inner {
+  margin: 5% 0;
+}
+.content {
+  padding: 5%;
+  box-sizing: border-box;
+}

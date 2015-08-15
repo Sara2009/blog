@@ -1,0 +1,97 @@
+/* @group img */
+.img-size-150{
+  border:0;  
+  margin:0;  
+  padding:0;  
+  max-width:150px;  
+  max-height:150px;  
+  width:expression(this.width>150?"150px":this.width);  
+  height:expression(this.height>150?"  150px":this.height); 
+}
+
+.img-circle-css3{
+  border-radius:50%; /* 使用CSS3 */
+}
+
+/* 
+ *@group Thumbnail
+ */
+.thumbnail-box{
+  text-align: left;
+  width: 250px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin: 0 20px;
+  display: block;
+  border-radius:4px;
+  -webkit-transition:border .2s ease-in-out;
+  transition:border: .2s ease-in-out;
+}
+.thumbnail-box:hover{
+  cursor:pointer;
+  text-decoration: none;
+  border-color:#337ab7
+}
+.thumbnail-box img{
+  height: 200px;
+  width: 100%;
+  display: block;
+}
+.thumbnail-box .thumbnail-caption{
+  padding:9px;
+}
+
+/* @group Media */
+/* 使用display:table-cell实现 */
+.media-box, .media-body{
+  overflow: hidden; 
+  zoom: 1;
+}
+.media-box{
+  margin-top: 0.5em;
+  p.media-opt {
+    text-align: right;
+  }
+}
+.media-left, .media-body, .media-right{
+  display: table-cell;
+  vertical-align: top;
+}
+.media-left{
+  padding-right: 10px;
+}
+.media-right{
+  padding-left: 10px;
+}
+.media-header{
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  line-height: 1;
+}
+.media-body p{
+  margin: 0;
+}
+/* 使用float实现 */
+.media-box-float{
+  background-color:#F8F8F8;
+  border: solid 1px #ddd;
+  padding: 10px;
+}
+.media-left-float{
+  float: left;
+  width:8%;
+  max-width: 64px;
+  overflow: hidden;
+}
+.media-left-float img{
+  max-width: 64px;
+}
+
+.media-body-float{
+  float: right;
+  width:90%;
+}
+
+.media-body-float p{
+  margin:0;
+}

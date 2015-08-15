@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Slider</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="../src/slider/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="inner">
+		<div class="content">
+			<h1>Image Slider</h1>
+			<div class="slider">
+				<ul>
+    				<li style="background-image: url(images/Lighthouse.jpg);" class="show">
+    					<div class="inner">
+    						<h1>This is a slide.</h1>
+    						<p>I just wanted to show you another slide.</p>
+							<a class="btn" href="#download">button</a>
+    					</div>
+    				</li>
+    				<li style="background-image: url(images/Lighthouse.jpg);">
+    					<div class="inner">
+    						<h1>This is another slide.</h1>
+    						<p>I just wanted to show you another slide.</p>
+							<a class="btn" href="#download">button</a>
+    					</div>
+    				</li>
+    				<li style="background-image: url(images/Lighthouse.jpg);">
+    					<div class="inner">
+    						<h1>This is the final slide.</h1>
+    						<p>I just wanted to show you another slide.</p>
+    						<a class="btn" href="#download">button</a>
+    					</div>
+    				</li>
+    				<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script data-main="../src/main" src="../src/lib/require-2.1.11.js"></script>
+<script type="text/javascript">
+require.config({
+    baseUrl: '../src',
+    paths: {
+        jquery: 'lib/jquery-1.11.3',
+        slider: 'slider/slider',
+    }
+});
+require(['jquery', 'slider'], function($, slider) {
+	$(function () {
+		$('.slider').slider();
+	});
+});
+</script>
+</body>
+</html>

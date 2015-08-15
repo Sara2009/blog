@@ -1,0 +1,71 @@
+.sidebar-first {
+  font-weight: 700;
+}
+.header {
+  height: 5em;
+  background-color: #E7E7E7;
+  padding: 20px;
+}
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.content {
+  /*  overflow: hidden; */
+  padding: 20px;
+}
+.wrapper {
+  background: #FFF ;
+  width: 76.8%;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 125em;
+  /* min-width: 30em; */
+}
+.inner {
+  margin: 20px 0;
+}
+/* 
+ * 两列布局
+ */
+.content .secondary .promo {
+  padding-left: 20px;
+}
+footer {
+  background-color: #E7E7E7;
+  padding: 1px 20px;
+  text-align: center;
+  clear: both;
+}
+.two-col-wrapper-liquid {
+  width: 76.8%;
+  margin: 0 auto;
+  text-align: left;
+}
+.content .primary {
+  width: 75%;
+  float: right;
+  padding-right: 20px;
+}
+.content .secondary {
+  width: 20%;
+  float: left;
+  border-right: 1px solid #CCC;
+  margin-top: 20px;
+}
+/*
+ * 三列布局
+ */
+.content .primary .three-col-primary-liquid {
+  width: 65%;
+  float: left;
+}
+.content .primary .three-col-secondary-liquid {
+  width: 27%;
+  padding-right: 2.63%;
+  float: right;
+}

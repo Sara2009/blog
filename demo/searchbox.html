@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>SearchBox</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="../src/searchbox/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="inner">
+		<div class="content">
+			<h1>SearchBox1---localData+notFloat</h1>
+			<div data-ui-type="searchbox" data-ui-id="searchbox1" data-is-float="false" data-data-type="local" data-datasource="@datasource1"></div>
+			<h1>SearchBox2---ajaxData+notFloat</h1>
+			<div data-ui-type="searchbox" data-ui-id="searchbox2" data-is-float="false" data-data-type="ajax" data-datasource="@ajaxTipData"></div>
+			<h1>SearchBox3---localData+float</h1>
+			<div data-ui-type="searchbox" data-ui-id="searchbox3" data-is-float="true" data-data-type="local" data-datasource="@datasource1"></div>
+			<h1>SearchBox4---localData+float+JScreate</h1>
+			<div id="searchbox4"></div>
+		</div>
+	</div>
+</div>
+<script data-main="../src/main" src="../src/lib/require-2.1.11.js"></script>
+<script type="text/javascript">
+require.config({
+    baseUrl: '../src',
+    paths: {
+        jquery: 'lib/jquery-1.11.3',
+        searchbox: 'searchbox/searchbox',
+    }
+});
+require(['jquery', 'searchbox'], function($, searchbox) {
+	$(function () {
+		$('#searchbox4').searchbox({
+			dataType: 'local',
+			datasource: ['a', 'aa', 'aaa', 'b', 'bb', 'ab']
+		});
+
+	});
+});
+</script>
+</body>
+</html>
