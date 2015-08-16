@@ -3,11 +3,11 @@ require.config({
     paths: {
         jquery: 'lib/jquery-1.11.3',
         searchbox: 'searchbox/searchbox',
-        u: 'lib/underscore-1.8.3'
+        underscore: 'lib/underscore-1.8.3'
     }
 });
 
-require(['jquery'], function($) {
+require(['jquery'], function($, u, sb) {
 	$(function () {
 		// searchbox
 		var searchboxDoms = $('[data-ui-type="searchbox"]');
