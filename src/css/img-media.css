@@ -23,8 +23,8 @@
   margin: 0 20px;
   display: block;
   border-radius: 4px;
-  /* -webkit-transition:border .2s 'ease-in-out';
-  transition:border: .2s 'ease-in-out'; */
+  -webkit-transition: border 0.2s 'ease-in-out';
+  transition: border 0.2s 'ease-in-out';
 }
 .thumbnail-box:hover {
   cursor: pointer;
