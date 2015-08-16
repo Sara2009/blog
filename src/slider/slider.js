@@ -38,6 +38,7 @@ define(['jquery'], function ($) {
 			if (width > _.size[0]) _.size[0] = width;
 			if (height > _.size[1]) _.size[1] = height;
 		});
+
 		var len   = _.li.length;
 		_.li.css({width: (100/len) + '%'});
 		el.css({width: _.size[0], height: _.size[1], overflow:'hidden'});
@@ -75,7 +76,6 @@ define(['jquery'], function ($) {
 			current = _.i,
 			target  = li.eq(index);
 		var ol      = el.find('.dots');
-		console.log(index);
 		if(index < 0 || ! target.length){
 			if(index < 0)
 				index = 2;

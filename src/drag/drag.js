@@ -34,12 +34,11 @@
                 /* 计算鼠标移动了的位置 */
                 var _x = event.pageX - event.data.mouse_x;
                 var _y = event.pageY - event.data.mouse_y;
-                console.log(_x);
                  
                 /* 设置移动后的元素坐标 */
                 var now_x = (event.data.offset_x + _x ) + "px";
-                var now_y = (event.data.offset_y + _y ) + "px";  
-                console.log(now_x);                  
+                var now_y = (event.data.offset_y + _y ) + "px";
+                  
                 /* 改变目标元素的位置 */
                 $(element).css({
                     top:now_y,
