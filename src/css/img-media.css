@@ -44,12 +44,14 @@
 .media-box,
 .media-body {
   overflow: hidden;
+  width: 100%;
   zoom: 1;
 }
 .media-box {
   margin-top: 0.5em;
 }
 .media-box p.media-opt {
+  margin-top: 10px;
   text-align: right;
 }
 .media-left,

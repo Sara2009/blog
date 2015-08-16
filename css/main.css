@@ -285,8 +285,9 @@ h1.page-header {
   /*  border: 1px solid transparent; */
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #333333;
-  padding: 5px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 0px;
+  min-height: 120px;
   /* box-shadow: 10px 10px 5px #888888; */
 }
 .panel:hover {
@@ -347,12 +348,14 @@ h1.page-header {
 .media-box,
 .media-body {
   overflow: hidden;
+  width: 100%;
   zoom: 1;
 }
 .media-box {
   margin-top: 0.5em;
 }
 .media-box p.media-opt {
+  margin-top: 10px;
   text-align: right;
 }
 .media-left,
