@@ -12,6 +12,14 @@
   border-radius: 50%;
   /* 使用CSS3 */
 }
+.img-hover-scale {
+  transition: all 1.0s;
+  -webkit-transition: all 1.0s;
+}
+.img-hover-scale:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
 /* 
  *@group Thumbnail
  */
