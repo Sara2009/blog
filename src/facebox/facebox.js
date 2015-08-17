@@ -2,8 +2,11 @@
 	'user strict';
 	var Modal = function (element, options) {
 		var _ = this;
-		_.o = options;
 		_.$element = $(element);
+		 options = options || {};
+        $.extend(options, _.$element.data());
+		_.o = options;
+		
 		_.$modal = $('#' + _.o.modalId);
 		_.init();
 	};
@@ -49,12 +52,6 @@
 	Modal.prototype.hide = function () {
 		var _ = this;
 		$('.modal-backup').remove();
-		_.$modal.find('.modal-dialog').css({
-        	'position': 'relative',
-        	'left': 0,
-        	'top': 0,
-        	'z-index': 0
-        });
 		_.$modal.hide();
 		
 		

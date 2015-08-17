@@ -2,8 +2,9 @@ require.config({
     baseUrl: '../src',
     paths: {
         jquery: 'lib/jquery-1.11.3',
+        underscore: 'lib/underscore-1.8.3',
         searchbox: 'searchbox/searchbox',
-        underscore: 'lib/underscore-1.8.3'
+        facebox: 'facebox/facebox'
     }
 });
 
@@ -31,7 +32,15 @@ require(['jquery'], function($, u, sb) {
 		}
 
 		
-		// dragsort
+		// facebox
+		var faceboxDoms = $('[data-ui-type="facebox"]');
+		if (faceboxDoms.length > 0) {
+			require(['facebox'], function (modal) {
+				(function () {
+					faceboxDoms.facebox();
+				})();
+			});
+		}
 
 	});
 	

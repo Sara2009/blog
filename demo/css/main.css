@@ -69,7 +69,6 @@ h2 {
   -o-text-overflow: ellipsis;
   overflow: hidden;
 }
-.btn,
 .btn-default {
   display: inline-block;
   padding: 6px 12px;
@@ -85,7 +84,6 @@ h2 {
   border-radius: 5px;
   font-size: 14px;
 }
-.btn:hover,
 .btn-default:hover {
   background-color: #e6e6e6;
   color: #2e6da4;

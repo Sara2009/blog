@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -11,17 +12,35 @@
 	<div class="inner">
 		<div class="content">
 			<h1>FaceBox---浮层</h1>
-			<button id='modal1' class="btn" data-modal-id="modal1-data">点我生成浮层</button>
+			<button id='modal1' class="btn">点我生成浮层</button>
+			<button id='modal2' class="btn" data-modal-id="modal2-data" data-ui-type="facebox">点我生成浮层</button>
 			<div class="modal fade" id="modal1-data">
 				<div class="modal-dialog">
 				    <div class="modal-content">
 				      	<div class="modal-header">
-				        	<h4 class="modal-title">Modal title</h4>
+				        	<h4 class="modal-title">Modal1 title</h4>
 				      	</div>
 				      	<div class="modal-body">
-				        	<p>One fine body&hellip;</p>
-				        	<p>One fine body&hellip;</p>
-				        	<p>One fine body&hellip;</p>
+				        	<p>One fine body1&hellip;</p>
+				        	<p>One fine body1&hellip;</p>
+				        	<p>One fine body1&hellip;</p>
+				      	</div>
+				      	<div class="modal-footer">
+				        	<button type="button" class="btn btn-default btn-cancle">Close</button>
+				    	</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<div class="modal fade" id="modal2-data">
+				<div class="modal-dialog">
+				    <div class="modal-content">
+				      	<div class="modal-header">
+				        	<h4 class="modal-title">Modal2 title</h4>
+				      	</div>
+				      	<div class="modal-body">
+				        	<p>One fine body2&hellip;</p>
+				        	<p>One fine body2&hellip;</p>
+				        	<p>One fine body2&hellip;</p>
 				      	</div>
 				      	<div class="modal-footer">
 				        	<button type="button" class="btn btn-default btn-cancle">Close</button>
