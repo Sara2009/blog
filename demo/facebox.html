@@ -2,29 +2,29 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>SearchBox</title>
+	<title>FaceBox</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="../src/modal/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../src/facebox/css/main.css">
 </head>
 <body>
 <div class="wrapper">
 	<div class="inner">
 		<div class="content">
-			<h1>Modal---浮层</h1>
-			<button class="btn">点我生成浮层</button>
-			<div class="modal fade" id="facebox">
+			<h1>FaceBox---浮层</h1>
+			<button id='modal1' class="btn" data-modal-id="modal1-data">点我生成浮层</button>
+			<div class="modal fade" id="modal1-data">
 				<div class="modal-dialog">
 				    <div class="modal-content">
 				      	<div class="modal-header">
-				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				        	<h4 class="modal-title">Modal title</h4>
 				      	</div>
 				      	<div class="modal-body">
 				        	<p>One fine body&hellip;</p>
+				        	<p>One fine body&hellip;</p>
+				        	<p>One fine body&hellip;</p>
 				      	</div>
 				      	<div class="modal-footer">
-				        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        	<button type="button" class="btn btn-primary">Save changes</button>
+				        	<button type="button" class="btn btn-default btn-cancle">Close</button>
 				    	</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
@@ -38,13 +38,13 @@ require.config({
     baseUrl: '../src',
     paths: {
         jquery: 'lib/jquery-1.11.3',
-        modal: 'modal/modal',
+        facebox: 'facebox/facebox',
     }
 });
-require(['jquery', 'modal'], function($, modal) {
+require(['jquery', 'facebox'], function($, modal) {
 	$(function () {
-		$('.btn').modal({
-			modalId: 'facebox'
+		$('#modal1').facebox({
+			modalId: 'modal1-data'
 		});
 
 	});
